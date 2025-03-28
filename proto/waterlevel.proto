@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+// import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/fabioar87/data-dispatcher/proto";
+
+message WaterLevel {
+  string date = 1;
+  float dayMin = 2;
+  float dayMax = 3;
+  float dayMean = 4;
+}
